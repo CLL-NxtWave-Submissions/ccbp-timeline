@@ -61,4 +61,11 @@
 }
 
 @media (min-width: 768px) {
+  .course-time-line-card-header-container {
+    flex-direction: column;
+  }
+
+  .course-tag-list {
+    flex-direction: column;
+  }
 }
