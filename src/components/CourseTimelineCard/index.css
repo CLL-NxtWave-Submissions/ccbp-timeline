@@ -52,13 +52,13 @@
 
 .course-tag {
   color: #1e293b;
-  margin-right: 0.25rem;
+  margin-right: 0.5rem;
   margin-bottom: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.3rem;
   font-size: 0.8rem;
   font-weight: 550;
-  background-color: #f8f8ff;
+  background-color: #dcdcf0;
 }
 
 @media (min-width: 768px) {
