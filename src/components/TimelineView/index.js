@@ -8,12 +8,19 @@ import './index.css'
 const TimelineView = props => {
   const {timelineItemsList} = props
 
+  const getTimelineItemTitlesList = inputTimelineItemsDataList =>
+    inputTimelineItemsDataList.map(singleTimelineItem => ({
+      title: singleTimelineItem.title,
+    }))
+
+  const timelineItemTitlesList = getTimelineItemTitlesList(timelineItemsList)
+
   return (
     <div className="time-line-view-container">
       <h1 className="time-line-view-header">MY JOURNEY OF</h1>
       <h1 className="time-line-view-program-name">CCBP 4.0</h1>
       <div className="time-line-view-chrono-container">
-        <Chrono mode="VERTICAL_ALTERNATING">
+        <Chrono items={timelineItemTitlesList} mode="VERTICAL_ALTERNATING">
           {timelineItemsList.map(timelineItemsListEntry => {
             const {categoryId} = timelineItemsListEntry
             let timelineItemCardComponent = null
