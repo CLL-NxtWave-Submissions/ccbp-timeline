@@ -26,10 +26,12 @@ const TimelineView = props => {
           theme={{
             primary: '#0967d2',
             secondary: '#ffffff',
-            titleColor: '#1e293b',
-            titleColorActive: '#0967d2',
+            titleColor: '#0967d2',
           }}
-          scrollable={{scrollBar: true}}
+          fontSizes={{
+            title: '2rem',
+          }}
+          scrollable={{scrollbar: true}}
         >
           {timelineItemsList.map(timelineItemsListEntry => {
             const {categoryId} = timelineItemsListEntry

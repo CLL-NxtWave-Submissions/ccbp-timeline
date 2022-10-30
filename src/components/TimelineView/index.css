@@ -25,4 +25,6 @@
 .time-line-view-chrono-container {
   width: 100%;
   height: 90%;
+  scrollbar-color: #2b237c grey;
+  overflow-y: auto;
 }

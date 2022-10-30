@@ -61,6 +61,11 @@
   background-color: #dcdcf0;
 }
 
+.course-tag-name {
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   .course-time-line-card-header-container {
     flex-direction: row;
