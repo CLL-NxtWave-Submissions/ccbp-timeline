@@ -23,15 +23,13 @@ const TimelineView = props => {
         <Chrono
           items={timelineItemTitlesList}
           mode="VERTICAL_ALTERNATING"
-          fontSizes={{title: '1.5rem'}}
           theme={{
+            primary: '#0967d2',
+            secondary: '#ffffff',
             titleColor: '#1e293b',
             titleColorActive: '#0967d2',
-            cardBgColor: '#ffffff',
           }}
-          classNames={{
-            title: 'time-line-item-title',
-          }}
+          scrollable={{scrollBar: true}}
         >
           {timelineItemsList.map(timelineItemsListEntry => {
             const {categoryId} = timelineItemsListEntry
