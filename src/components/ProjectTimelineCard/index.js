@@ -18,7 +18,7 @@ const ProjectTimelineCard = props => {
       <img
         className="project-time-line-card-img"
         src={imageUrl}
-        alt={projectTitle}
+        alt="project"
       />
       <div className="project-name-duration-container">
         <h1 className="project-name">{projectTitle}</h1>
