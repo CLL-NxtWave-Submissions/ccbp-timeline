@@ -13,15 +13,15 @@ const CourseTimelineCard = props => {
           <AiFillClockCircle className="course-duration-clock-icon" />
           <p className="course-duration">{duration}</p>
         </div>
-        <p className="course-description">{description}</p>
-        <ul className="course-tag-list">
-          {tagsList.map(tagsListItem => (
-            <li key={tagsListItem.id} className="course-tag">
-              {tagsListItem.name}
-            </li>
-          ))}
-        </ul>
       </div>
+      <p className="course-description">{description}</p>
+      <ul className="course-tag-list">
+        {tagsList.map(tagsListItem => (
+          <li key={tagsListItem.id} className="course-tag">
+            {tagsListItem.name}
+          </li>
+        ))}
+      </ul>
     </>
   )
 }

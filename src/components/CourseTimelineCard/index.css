@@ -1,6 +1,6 @@
 .course-time-line-card-header-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -44,7 +44,7 @@
   list-style-type: none;
   padding-left: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   font-family: 'Roboto';
 }
@@ -62,10 +62,10 @@
 
 @media (min-width: 768px) {
   .course-time-line-card-header-container {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .course-tag-list {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
