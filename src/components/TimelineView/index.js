@@ -17,8 +17,10 @@ const TimelineView = props => {
 
   return (
     <div className="time-line-view-container">
-      <h1 className="time-line-view-header">MY JOURNEY OF</h1>
-      <h1 className="time-line-view-program-name">CCBP 4.0</h1>
+      <h1 className="time-line-view-header">
+        MY JOURNEY OF <br />
+        <span className="time-line-view-program-name">CCBP 4.0</span>
+      </h1>
       <div className="time-line-view-chrono-container">
         <Chrono
           items={timelineItemTitlesList}
