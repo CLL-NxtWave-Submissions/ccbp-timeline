@@ -20,25 +20,33 @@ const TimelineView = props => {
       <h1 className="time-line-view-header">MY JOURNEY OF</h1>
       <h1 className="time-line-view-program-name">CCBP 4.0</h1>
       <div className="time-line-view-chrono-container">
-        <Chrono items={timelineItemTitlesList} mode="VERTICAL_ALTERNATING">
+        <Chrono
+          items={timelineItemTitlesList}
+          mode="VERTICAL_ALTERNATING"
+          fontSizes={{title: '1.5rem'}}
+          theme={{
+            titleColor: '#1e293b',
+            titleColorActive: '#0967d2',
+            cardBgColor: '#ffffff',
+          }}
+          classNames={{
+            title: 'time-line-item-title',
+          }}
+        >
           {timelineItemsList.map(timelineItemsListEntry => {
             const {categoryId} = timelineItemsListEntry
             let timelineItemCardComponent = null
 
             if (categoryId === 'COURSE') {
               timelineItemCardComponent = (
-                <div>
-                  <CourseTimelineCard
-                    key={timelineItemsListEntry.id}
-                    courseCardData={timelineItemsListEntry}
-                  />
+                <div key={timelineItemsListEntry.id}>
+                  <CourseTimelineCard courseCardData={timelineItemsListEntry} />
                 </div>
               )
             } else if (categoryId === 'PROJECT') {
               timelineItemCardComponent = (
-                <div>
+                <div key={timelineItemsListEntry.id}>
                   <ProjectTimelineCard
-                    key={timelineItemsListEntry.id}
                     projectCardData={timelineItemsListEntry}
                   />
                 </div>
